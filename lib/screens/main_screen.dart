@@ -41,63 +41,60 @@ class MainScreen extends StatelessWidget {
       //this side bar is triggered from the IconButton
       drawer: SideBar(),
       body: Center(
-        child: Container(
-          constraints: BoxConstraints(maxWidth: maxWidth),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              //flex 3 meas this take 75% of width and other take 25%
-              // we want somewhere between 21-23%
-              //this with flex=2 take 2/(7+2)*100 = 22% width
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            //flex 3 meas this take 75% of width and other take 25%
+            // we want somewhere between 21-23%
+            //this with flex=2 take 2/(7+2)*100 = 22% width
 
-              //this is the side bar or my profiel section
+            //this is the side bar or my profiel section
 
-              if (ResponsiveLayout.isDesktop(context) == true)
-                Expanded(
-                  flex: 2,
-                  child: SideBar(),
-                ),
-              SizedBox(
-                width: padding,
+            if (ResponsiveLayout.isDesktop(context) == true)
+              Expanded(
+                flex: 2,
+                child: SideBar(),
               ),
-              // Expanded(
-              //   flex: 7,
-              //   child: SingleChildScrollView(
-              //     child: Column(
-              //       children: [
-              //         ...childrenOfRightPart,
-              //       ],
-              //     ),
+            SizedBox(
+              width: padding,
+            ),
+            // Expanded(
+            //   flex: 7,
+            //   child: SingleChildScrollView(
+            //     child: Column(
+            //       children: [
+            //         ...childrenOfRightPart,
+            //       ],
+            //     ),
+            //   ),
+            // ),
+            Expanded(
+              flex: 7,
+              child: Container(
+                child: Column(
+                  children: [
+                    ResponsiveLayout.isDesktop(context)
+                        ? TopBar()
+                        : Row(children: []),
+                    Expanded(
+                      child: SingleChildScrollView(
+                        child: Column(
+                          children: [...childrenOfRightPart],
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              // SingleChildScrollView(
+              //   child: Column(
+              //     children: [
+              //       ...childrenOfRightPart,
+              //     ],
               //   ),
               // ),
-              Expanded(
-                flex: 7,
-                child: Container(
-                  child: Column(
-                    children: [
-                      ResponsiveLayout.isDesktop(context)
-                          ? TopBar()
-                          : Row(children: []),
-                      Expanded(
-                        child: SingleChildScrollView(
-                          child: Column(
-                            children: [...childrenOfRightPart],
-                          ),
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-                // SingleChildScrollView(
-                //   child: Column(
-                //     children: [
-                //       ...childrenOfRightPart,
-                //     ],
-                //   ),
-                // ),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
