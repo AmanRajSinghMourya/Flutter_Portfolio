@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/components/timeline_card.dart';
 import 'package:portfolio/constraints.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
@@ -8,10 +7,12 @@ class MyTimeLineTile extends StatelessWidget {
     super.key,
     required this.isFirst,
     required this.isLast,
+    required this.timeLineCard,
   });
 
   final bool isFirst;
   final bool isLast;
+  final Widget timeLineCard;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -26,7 +27,7 @@ class MyTimeLineTile extends StatelessWidget {
           color: primaryColor,
           width: 20,
         ),
-        endChild: TimeLineCard(),
+        endChild: timeLineCard,
       ),
     );
   }

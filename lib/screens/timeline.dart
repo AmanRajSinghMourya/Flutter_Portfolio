@@ -1,5 +1,6 @@
 import 'package:portfolio/components/my_time_line_tile.dart';
 import 'package:flutter/material.dart';
+import 'package:portfolio/components/timeline_card.dart';
 
 class TimeLine extends StatelessWidget {
   const TimeLine({super.key});
@@ -15,14 +16,17 @@ class TimeLine extends StatelessWidget {
             MyTimeLineTile(
               isFirst: true,
               isLast: false,
+              timeLineCard: TimeLineCard(),
             ),
             MyTimeLineTile(
               isFirst: false,
               isLast: false,
+              timeLineCard: TimeLineCard(),
             ),
             MyTimeLineTile(
               isFirst: false,
               isLast: true,
+              timeLineCard: TimeLineCard(),
             ),
           ],
         ),
