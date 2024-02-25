@@ -1,6 +1,8 @@
 import 'dart:ui';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:portfolio/constraints.dart';
 import 'package:portfolio/modals/project_list.dart';
 import 'package:portfolio/responsive.dart';
@@ -49,7 +51,7 @@ class ProjectScreen extends StatelessWidget {
                       // shrinkWrap: true,
                       padding: EdgeInsets.zero,
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        childAspectRatio: 16.0 / 8.0,
+                        childAspectRatio: 11.0 / 5.0,
                         crossAxisCount: 1,
                         crossAxisSpacing: padding,
                         mainAxisSpacing: padding,
@@ -91,26 +93,15 @@ class ProjectScreen extends StatelessWidget {
                               ),
                             ),
                             Expanded(
-                              child: ScrollConfiguration(
-                                behavior: AppScrollBehavior(),
-                                child: GridView.builder(
-                                  padding: EdgeInsets.zero,
-                                  shrinkWrap: true,
-                                  physics: PageScrollPhysics(),
-                                  scrollDirection: Axis.horizontal,
-                                  gridDelegate:
-                                      const SliverGridDelegateWithFixedCrossAxisCount(
-                                    crossAxisCount: 1,
-                                    childAspectRatio: 6 / 2,
-                                    crossAxisSpacing: 0,
-                                    mainAxisSpacing: padding * 2,
-                                  ),
-                                  itemCount:
-                                      project[index].projectImages.length,
-                                  itemBuilder: (context, index1) => Container(
-                                    child: Image.asset(
-                                      project[index].projectImages[index1],
-                                    ),
+                              child: ListView.builder(
+                                scrollDirection: Axis.horizontal,
+                                itemCount: project[index].projectImages.length,
+                                itemBuilder: (context, index1) => Container(
+                                  padding: EdgeInsets.all(padding / 2),
+                                  margin: EdgeInsets.all(padding / 2),
+                                  child: Image.asset(
+                                    project[index].projectImages[index1],
+                                    fit: BoxFit.cover,
                                   ),
                                 ),
                               ),

@@ -53,6 +53,10 @@ List<Project> project = [
       "assets/ss1.png",
       "assets/ss1.png",
       "assets/ss1.png",
+      "assets/ss1.png",
+      "assets/ss1.png",
+      "assets/ss1.png",
+      "assets/ss1.png",
     ],
   ),
   Project(
