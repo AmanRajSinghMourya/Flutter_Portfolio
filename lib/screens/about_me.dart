@@ -42,7 +42,17 @@ class AboutMe extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             //HERE IS THE TOPBAR APPLIED
-            if (ResponsiveLayout.isDesktop(context) == true) TopBar(),
+            Row(
+              children: [
+                if (ResponsiveLayout.isDesktop(context) == true)
+                  Expanded(
+                    flex: 2,
+                    child: Container(),
+                  ),
+                if (ResponsiveLayout.isDesktop(context) == true)
+                  Expanded(flex: 7, child: TopBar()),
+              ],
+            ),
             Divider(),
 
             //about section

@@ -27,7 +27,18 @@ class ContactMeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            if (ResponsiveLayout.isDesktop(context) == true) TopBar(),
+            // if (ResponsiveLayout.isDesktop(context) == true) TopBar(),
+            Row(
+              children: [
+                if (ResponsiveLayout.isDesktop(context) == true)
+                  Expanded(
+                    flex: 2,
+                    child: Container(),
+                  ),
+                if (ResponsiveLayout.isDesktop(context) == true)
+                  Expanded(flex: 7, child: TopBar()),
+              ],
+            ),
             Divider(),
             Padding(
               padding: EdgeInsets.all(padding),

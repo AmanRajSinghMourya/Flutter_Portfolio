@@ -38,8 +38,19 @@ class ProjectScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Row(
+              children: [
+                if (ResponsiveLayout.isDesktop(context) == true)
+                  Expanded(
+                    flex: 2,
+                    child: Container(),
+                  ),
+                if (ResponsiveLayout.isDesktop(context) == true)
+                  Expanded(flex: 7, child: TopBar()),
+              ],
+            ),
+
             //TopBar applied on ProjectScreen
-            if (ResponsiveLayout.isDesktop(context) == true) TopBar(),
             Divider(),
 
             Expanded(
