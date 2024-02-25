@@ -79,10 +79,12 @@ class MainScreen extends StatelessWidget {
                     Expanded(
                       child: SingleChildScrollView(
                         child: Column(
-                          children: [...childrenOfRightPart],
+                          children: [
+                            ...childrenOfRightPart,
+                          ],
                         ),
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
