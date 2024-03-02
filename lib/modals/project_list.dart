@@ -1,11 +1,14 @@
 class Project {
   final String projectTitle, description;
   List<String> projectImages;
+  List<String> iconsUsed;
   Project({
     required this.projectTitle,
     required this.description,
     List<String>? projectImages,
-  }) : projectImages = projectImages ?? [];
+    List<String>? iconsUsed,
+  })  : projectImages = projectImages ?? [],
+        iconsUsed = iconsUsed ?? [];
 }
 
 class ContactDetails {
@@ -46,8 +49,13 @@ List<ContactDetails> contactDetails = [
 List<Project> project = [
   Project(
     projectTitle: "Calculator",
+    iconsUsed: [
+      "assets/dart.png",
+      "assets/firebase.png",
+      "assets/flutter.png",
+    ],
     description:
-        "Basic Calculator having light and dark themeBasic Calculator having light and dark themeBasic Calculator having light and dark themeBasic Calculator having light and dark theme",
+        "Calculator having light and dark themeBasic Calculator having light and dark theme",
     projectImages: [
       "assets/ss1.png",
       "assets/ss1.png",

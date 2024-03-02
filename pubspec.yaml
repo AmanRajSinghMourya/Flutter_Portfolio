@@ -40,6 +40,7 @@ dependencies:
   timeline_tile: ^2.0.0
   url_launcher: ^6.2.4
   flutter_social_button: ^1.1.4+1
+  font_awesome_flutter: ^10.7.0
   
 
 dev_dependencies:
@@ -75,8 +76,10 @@ flutter:
     - assets/github.png
     - assets/linkedin.png
     - assets/leetcod.png
-    - assets/codechef.png
     - assets/codechef.jpg
+    - "assets/flutter.png"
+    - "assets/firebase.png"
+    - "assets/dart.png"
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

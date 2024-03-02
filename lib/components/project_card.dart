@@ -12,8 +12,11 @@ class ProjectCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10),
+        color: secondaryColor,
+      ),
       padding: EdgeInsets.all(padding),
-      color: secondaryColor,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -26,7 +29,7 @@ class ProjectCard extends StatelessWidget {
           ),
           // Spacer(),
           Text(
-            maxLines: ResponsiveLayout.isMobile(context) ? 3 : 4,
+            maxLines: ResponsiveLayout.isMobile(context) ? 3 : 3,
             project.description,
             overflow: TextOverflow.ellipsis,
             style: TextStyle(
@@ -34,6 +37,7 @@ class ProjectCard extends StatelessWidget {
             ),
           ),
           // Spacer(),
+
           Center(
             child: TextButton(
               onPressed: () {},
@@ -42,6 +46,31 @@ class ProjectCard extends StatelessWidget {
                 style: TextStyle(color: primaryColor),
               ),
             ),
+          ),
+          //tech stack used
+          // if (!ResponsiveLayout.isTablet(context))
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              CircleAvatar(
+                radius: 20,
+                // maxRadius: 25,
+                // minRadius: 5,
+                backgroundImage: ExactAssetImage("assets/flutter.png"),
+              ),
+              CircleAvatar(
+                radius: 20,
+                // maxRadius: 25,
+                // minRadius: 5,
+                backgroundImage: ExactAssetImage("assets/firebase.png"),
+              ),
+              CircleAvatar(
+                radius: 20,
+                // maxRadius: 25,
+                // minRadius: 5,
+                backgroundImage: ExactAssetImage("assets/dart.png"),
+              )
+            ],
           ),
         ],
       ),

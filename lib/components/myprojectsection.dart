@@ -26,12 +26,12 @@ class MyProjectSections extends StatelessWidget {
             crossAxisCount: 1,
           ),
           tablet: ProjectGrid(
-            childAspectRatio: 1.1,
-            crossAxisCount: 3,
+            childAspectRatio: 1.5,
+            crossAxisCount: 2,
           ),
           desktop: ProjectGrid(
             crossAxisCount: 3,
-            childAspectRatio: 1.3,
+            childAspectRatio: 1.2,
           ),
         ),
       ],

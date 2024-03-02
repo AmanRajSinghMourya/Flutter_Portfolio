@@ -1,8 +1,6 @@
 import 'dart:ui';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:portfolio/constraints.dart';
 import 'package:portfolio/modals/project_list.dart';
 import 'package:portfolio/responsive.dart';
@@ -62,7 +60,7 @@ class ProjectScreen extends StatelessWidget {
                       // shrinkWrap: true,
                       padding: EdgeInsets.zero,
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        childAspectRatio: 11.0 / 5.0,
+                        childAspectRatio: 19.0 / 5.0,
                         crossAxisCount: 1,
                         crossAxisSpacing: padding,
                         mainAxisSpacing: padding,
@@ -94,7 +92,7 @@ class ProjectScreen extends StatelessWidget {
                               child: Text(
                                 project[index].description,
                                 overflow: TextOverflow.ellipsis,
-                                maxLines: 5,
+                                maxLines: 4,
                                 style: Theme.of(context)
                                     .textTheme
                                     .titleMedium!
