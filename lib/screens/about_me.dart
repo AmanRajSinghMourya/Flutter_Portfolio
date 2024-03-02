@@ -53,7 +53,7 @@ class AboutMe extends StatelessWidget {
                   Expanded(flex: 7, child: TopBar()),
               ],
             ),
-            Divider(),
+            // Divider(),
 
             //about section
             Expanded(
@@ -75,7 +75,7 @@ class AboutMe extends StatelessWidget {
                         "Something about me!",
                         // textAlign: TextAlign.center,
                         style: ResponsiveLayout.isDesktop(context)
-                            ? Theme.of(context).textTheme.titleLarge!.copyWith(
+                            ? Theme.of(context).textTheme.bodyLarge!.copyWith(
                                   color: primaryColor,
                                   fontWeight: FontWeight.bold,
                                 )

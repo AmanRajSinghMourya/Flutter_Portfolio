@@ -12,7 +12,11 @@ class CollegeTimeLine extends StatelessWidget {
     return Expanded(
       child: Column(
         children: [
-          Text("College", style: Theme.of(context).textTheme.titleLarge),
+          Text("College",
+              style: Theme.of(context)
+                  .textTheme
+                  .titleLarge!
+                  .copyWith(color: primaryColor)),
           Container(
             color: backColor,
             margin: EdgeInsets.all(5),

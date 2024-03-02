@@ -103,20 +103,22 @@ class ProjectScreen extends StatelessWidget {
                                     ),
                               ),
                             ),
-                            Expanded(
-                              child: ListView.builder(
-                                scrollDirection: Axis.horizontal,
-                                itemCount: project[index].projectImages.length,
-                                itemBuilder: (context, index1) => Container(
-                                  padding: EdgeInsets.all(padding / 2),
-                                  margin: EdgeInsets.all(padding / 2),
-                                  child: Image.asset(
-                                    project[index].projectImages[index1],
-                                    fit: BoxFit.cover,
+                            if (ResponsiveLayout.isDesktop(context) == true)
+                              Expanded(
+                                child: ListView.builder(
+                                  scrollDirection: Axis.horizontal,
+                                  itemCount:
+                                      project[index].projectImages.length,
+                                  itemBuilder: (context, index1) => Container(
+                                    padding: EdgeInsets.all(padding / 2),
+                                    margin: EdgeInsets.all(padding / 2),
+                                    child: Image.asset(
+                                      project[index].projectImages[index1],
+                                      fit: BoxFit.cover,
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
                           ],
                         ),
                       ),

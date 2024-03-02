@@ -13,7 +13,11 @@ class EducationTimeLine extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text("Education", style: Theme.of(context).textTheme.titleLarge),
+          Text("Education",
+              style: Theme.of(context)
+                  .textTheme
+                  .titleLarge!
+                  .copyWith(color: primaryColor)),
           Container(
             color: backColor,
             margin: EdgeInsets.all(5),

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:portfolio/components/collegeTimeLine.dart';
 import 'package:portfolio/components/education_timeline.dart';
+import 'package:portfolio/constraints.dart';
 import 'package:portfolio/responsive.dart';
 
 class MyTimeLineScreen extends StatelessWidget {
@@ -27,6 +28,9 @@ class MyTimeLineScreen extends StatelessWidget {
             body: SafeArea(
               child: ListView(
                 children: [
+                  SizedBox(
+                    height: padding,
+                  ),
                   Row(
                     children: [EducationTimeLine()],
                   ),
