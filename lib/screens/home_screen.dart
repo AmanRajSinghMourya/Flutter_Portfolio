@@ -28,6 +28,7 @@ class HomeScreen extends StatelessWidget {
         SizedBox(
           height: padding,
         ),
+        Divider(),
         MyProjectSections(),
       ],
     );

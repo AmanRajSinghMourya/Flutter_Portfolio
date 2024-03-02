@@ -54,20 +54,14 @@ class ProjectCard extends StatelessWidget {
             children: [
               CircleAvatar(
                 radius: 20,
-                // maxRadius: 25,
-                // minRadius: 5,
                 backgroundImage: ExactAssetImage("assets/flutter.png"),
               ),
               CircleAvatar(
                 radius: 20,
-                // maxRadius: 25,
-                // minRadius: 5,
                 backgroundImage: ExactAssetImage("assets/firebase.png"),
               ),
               CircleAvatar(
                 radius: 20,
-                // maxRadius: 25,
-                // minRadius: 5,
                 backgroundImage: ExactAssetImage("assets/dart.png"),
               )
             ],
