@@ -80,6 +80,7 @@ flutter:
     - "assets/flutter.png"
     - "assets/firebase.png"
     - "assets/dart.png"
+    - "assets/udemy-flutter.jpg"
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

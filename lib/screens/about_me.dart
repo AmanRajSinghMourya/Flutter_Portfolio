@@ -21,6 +21,7 @@ class AboutMe extends StatelessWidget {
     "assets/certificate1.png",
     "assets/certificate2.png",
     "assets/certificate1.png",
+    "assets/udemy-flutter.jpg"
   ];
   @override
   Widget build(BuildContext context) {
