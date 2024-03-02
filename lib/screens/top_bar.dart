@@ -6,6 +6,7 @@ import 'package:portfolio/screens/about_me.dart';
 import 'package:portfolio/screens/contact_me.dart';
 import 'package:portfolio/screens/home_screen.dart';
 import 'package:portfolio/screens/project_screens.dart';
+import 'package:portfolio/screens/timeline_screen.dart';
 
 class TopBar extends StatelessWidget {
   TopBar({super.key});
@@ -116,13 +117,13 @@ class TopBar extends StatelessWidget {
                   },
                 ),
                 SideBarNavigation(
-                  title: "Skills",
+                  title: "TimeLine",
                   icon: Icon(
                     Icons.stacked_line_chart_outlined,
                   ),
                   onTap: () {
-                    // Navigator.of(context).push(
-                    //     MaterialPageRoute(builder: (context) => AboutMe()));
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => MyTimeLineScreen()));
                   },
                 ),
               ],

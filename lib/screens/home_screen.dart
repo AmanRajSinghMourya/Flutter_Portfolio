@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/components/myprojectsection.dart';
 import 'package:portfolio/constraints.dart';
+import 'package:portfolio/responsive.dart';
 
 import 'package:portfolio/screens/home_image_banner.dart';
 
@@ -21,11 +22,9 @@ class HomeScreen extends StatelessWidget {
         SizedBox(
           height: padding,
         ),
-        Text(
-          "My TimeLine",
-          style: Theme.of(context).textTheme.titleLarge,
-        ),
-        MyTimeLineScreen(),
+        if (ResponsiveLayout.isDesktop(context))
+          Text("My TimeLine", style: Theme.of(context).textTheme.titleLarge),
+        if (ResponsiveLayout.isDesktop(context)) MyTimeLineScreen(),
         SizedBox(
           height: padding,
         ),

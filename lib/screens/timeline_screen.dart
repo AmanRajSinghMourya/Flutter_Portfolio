@@ -1,6 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio/constraints.dart';
-import 'package:portfolio/screens/timeline.dart';
+import 'package:flutter/widgets.dart';
+import 'package:portfolio/components/collegeTimeLine.dart';
+import 'package:portfolio/components/education_timeline.dart';
+import 'package:portfolio/responsive.dart';
 
 class MyTimeLineScreen extends StatelessWidget {
   const MyTimeLineScreen({
@@ -9,37 +12,45 @@ class MyTimeLineScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Expanded(
-          flex: 1,
-          child: Column(
+    return ResponsiveLayout.isDesktop(context)
+        ? Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("Education", style: Theme.of(context).textTheme.titleLarge),
-              Container(
-                color: backColor,
-                margin: EdgeInsets.all(5),
-                child: TimeLine(),
-              ),
+              EducationTimeLine(),
+              CollegeTimeLine(),
             ],
-          ),
-        ),
-        Expanded(
-          flex: 1,
-          child: Column(
-            children: [
-              Text("College", style: Theme.of(context).textTheme.titleLarge),
-              Container(
-                color: backColor,
-                margin: EdgeInsets.all(5),
-                child: TimeLine(),
+          )
+        : Scaffold(
+            appBar: AppBar(
+              title: Text("TimeLine"),
+            ),
+            body: SafeArea(
+              child: ListView(
+                children: [
+                  Row(
+                    children: [EducationTimeLine()],
+                  ),
+                  Row(
+                    children: [CollegeTimeLine()],
+                  ),
+                ],
               ),
-            ],
-          ),
-        ),
-      ],
-    );
+            ),
+          );
+    // Expanded(
+    //   child: Container(
+    //     color: Colors.amber,
+    //   ),
+    // ),
+    // Expanded(
+    //   child: Container(
+    //     color: Colors.red,
+    //   ),
+    // )
+    // SizedBox(
+    //     height: 400,
+    //     child: ListView(
+    //       children: [EducationTimeLine()],
+    //     ),
   }
 }
