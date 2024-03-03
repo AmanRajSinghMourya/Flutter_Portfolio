@@ -12,7 +12,7 @@ class TimeLineCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 120,
-      margin: EdgeInsets.all(25),
+      margin: EdgeInsets.all(10),
       padding: EdgeInsets.all(25),
       decoration: BoxDecoration(
         color: secondaryColor,

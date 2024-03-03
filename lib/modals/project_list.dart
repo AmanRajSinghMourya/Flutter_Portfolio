@@ -63,7 +63,7 @@ List<MyTimeLineTile> mytimelineCollege = [
   ),
   MyTimeLineTile(
     isFirst: false,
-    isLast: true,
+    isLast: false,
     timeLineCard: TimeLineCard(
       cardDescription:
           "17th September, 2023 \nGot selected as a member of Codechef VIT Club in Competetive Programming Department",
@@ -71,9 +71,10 @@ List<MyTimeLineTile> mytimelineCollege = [
   ),
   MyTimeLineTile(
     isFirst: false,
-    isLast: false,
+    isLast: true,
     timeLineCard: TimeLineCard(
-      cardDescription: "31st October, 2023 \nParticipated in ICPC Asia Pacific",
+      cardDescription:
+          "31st October, 2023 \nParticipated in ICPC Asia Pacific\nNot able to make it but it was a nice experience",
     ),
   ),
 ];
