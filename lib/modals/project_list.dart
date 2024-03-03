@@ -51,59 +51,55 @@ List<Project> project = [
     projectTitle: "Calculator",
     iconsUsed: [
       "assets/dart.png",
-      "assets/firebase.png",
+      // "assets/firebase.png",
       "assets/flutter.png",
     ],
     description:
-        "Calculator having light and dark themeBasic Calculator having light and dark theme",
+        "My 1st Flutter project Calculator having light and dark theme.",
     projectImages: [
-      "assets/ss1.png",
-      "assets/ss1.png",
-      "assets/ss1.png",
-      "assets/ss1.png",
-      "assets/ss1.png",
-      "assets/ss1.png",
       "assets/ss1.png",
       "assets/ss1.png",
     ],
   ),
   Project(
-    projectTitle: "Calculator",
-    description: "Basic Calculator having light and dark theme",
+    projectTitle: "Portfoilio",
+    description:
+        "Explore my dynamic Flutter portfolio, where I bring design to life and functionality to the forefront. From sleek UI/UX to seamless interactions, witness the art of mobile development in every project. Let's connect and explore the possibilities ",
     projectImages: [
-      "assets/ss1.png",
-      "assets/ss1.png",
-      "assets/ss1.png",
-      "assets/ss1.png",
+      // "assets/ss1.png",
+      // "assets/ss1.png",
+      // "assets/ss1.png",
+      // "assets/ss1.png",
     ],
   ),
-  Project(
-    projectTitle: "Calculator",
-    description: "Basic Calculator having light and dark theme",
-    projectImages: [
-      "assets/ss1.png",
-      "assets/ss1.png",
-      "assets/ss1.png",
-      "assets/ss1.png",
-    ],
-  ),
-  Project(
-    projectTitle: "Calculator",
-    description: "Basic Calculator having light and dark theme",
-    projectImages: [
-      "assets/ss1.png",
-      "assets/ss1.png",
-      "assets/ss1.png",
-      "assets/ss1.png",
-    ],
-  ),
-  Project(
-      projectTitle: "Calculator",
-      description: "Basic Calculator having light and dark theme",
-      projectImages: [
-        "assets/ss1.png",
-        "assets/ss1.png",
-        "assets/ss1.png",
-        "assets/ss1.png",
-      ]),
+  // Project(
+  //   projectTitle: "Calculator",
+  //   description: "Basic Calculator having light and dark theme",
+  //   projectImages: [
+  //     "assets/ss1.png",
+  //     "assets/ss1.png",
+  //     "assets/ss1.png",
+  //     "assets/ss1.png",
+  //   ],
+  // ),
+  // Project(
+  //   projectTitle: "Calculator",
+  //   description: "Basic Calculator having light and dark theme",
+  //   projectImages: [
+  //     "assets/ss1.png",
+  //     "assets/ss1.png",
+  //     "assets/ss1.png",
+  //     "assets/ss1.png",
+  //   ],
+  // ),
+  // Project(
+  //   projectTitle: "Calculator",
+  //   description: "Basic Calculator having light and dark theme",
+  //   projectImages: [
+  //     "assets/ss1.png",
+  //     "assets/ss1.png",
+  //     "assets/ss1.png",
+  //     "assets/ss1.png",
+  //   ],
+  // ),
 ];
