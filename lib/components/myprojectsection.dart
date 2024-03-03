@@ -22,7 +22,7 @@ class MyProjectSections extends StatelessWidget {
         ),
         ResponsiveLayout(
           mobile: ProjectGrid(
-            childAspectRatio: 2.0,
+            childAspectRatio: 1.4,
             crossAxisCount: 1,
           ),
           tablet: ProjectGrid(
