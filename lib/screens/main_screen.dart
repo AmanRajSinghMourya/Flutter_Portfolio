@@ -18,7 +18,7 @@ class MainScreen extends StatelessWidget {
           ? null
           : AppBar(
               title: Text(
-                "Porfolio X Aman",
+                "Portfolio X Aman",
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
