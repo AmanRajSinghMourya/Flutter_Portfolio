@@ -1,6 +1,5 @@
 import 'package:portfolio/components/my_time_line_tile.dart';
 import 'package:portfolio/components/timeline_card.dart';
-import 'package:portfolio/screens/timeline_screen.dart';
 
 class Project {
   final String projectTitle, description;
