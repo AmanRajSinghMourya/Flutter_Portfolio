@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/constraints.dart';
 
 class TimeLineCard extends StatelessWidget {
+  final String cardDescription;
   const TimeLineCard({
     super.key,
+    required this.cardDescription,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 150,
+      height: 120,
       margin: EdgeInsets.all(25),
       padding: EdgeInsets.all(25),
       decoration: BoxDecoration(
@@ -21,7 +23,7 @@ class TimeLineCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "8th May, 2019 \nPassed 10th from Nirmala Convent School with 90%",
+            cardDescription,
             style: Theme.of(context)
                 .textTheme
                 .titleSmall!

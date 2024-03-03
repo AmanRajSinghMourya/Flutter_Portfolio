@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/constraints.dart';
+import 'package:portfolio/modals/project_list.dart';
 import 'package:portfolio/screens/timeline.dart';
 
 class EducationTimeLine extends StatelessWidget {
@@ -21,7 +22,9 @@ class EducationTimeLine extends StatelessWidget {
           Container(
             color: backColor,
             margin: EdgeInsets.all(5),
-            child: TimeLine(),
+            child: TimeLine(
+              mytimelinetile: [...mytimelineEducation],
+            ),
           ),
         ],
       ),
