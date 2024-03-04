@@ -123,31 +123,9 @@ List<Project> project = [
         "Explore my dynamic Flutter portfolio, where I bring design to life and functionality to the forefront. From sleek UI/UX to seamless interactions, witness the art of mobile development in every project. Let's connect and explore the possibilities ",
     projectImages: [
       // "assets/ss1.png",
-      // "assets/ss1.png",
-      // "assets/ss1.png",
-      // "assets/ss1.png",
     ],
   ),
-  // Project(
-  //   projectTitle: "Calculator",
-  //   description: "Basic Calculator having light and dark theme",
-  //   projectImages: [
-  //     "assets/ss1.png",
-  //     "assets/ss1.png",
-  //     "assets/ss1.png",
-  //     "assets/ss1.png",
-  //   ],
-  // ),
-  // Project(
-  //   projectTitle: "Calculator",
-  //   description: "Basic Calculator having light and dark theme",
-  //   projectImages: [
-  //     "assets/ss1.png",
-  //     "assets/ss1.png",
-  //     "assets/ss1.png",
-  //     "assets/ss1.png",
-  //   ],
-  // ),
+
   // Project(
   //   projectTitle: "Calculator",
   //   description: "Basic Calculator having light and dark theme",

@@ -11,17 +11,18 @@ class AboutMe extends StatelessWidget {
     "Hi everyone, I am Aman Raj Singh Mourya",
     "I am currently a 2nd year B.Tech CSE student at VIT Chennai.",
     "I am from Ujjain(M.P.) and have completed my schooling from Nirmala Convent School, Ujjain",
-    "I have obtained 93% in class 10 and 90% in class 12th.",
+    "I have obtained 92% in class 10 and 90% in class 12th.",
     "I am also a member of CodeChef Club,VIT as a Competitive Programmer.",
     "Also started to dive in the concept of building Cross-Platform Responsive Application using Flutter.",
     "This Portfolio is also designed in the same.",
   ];
   final List<String> certificate = [
-    "assets/certificate2.png",
-    "assets/certificate1.png",
-    "assets/certificate2.png",
-    "assets/certificate1.png",
-    "assets/udemy-flutter.jpg"
+    "assets/HackerHorizon.png",
+    "assets/SIH2023.png",
+    "assets/udemy.png",
+    "assets/Certificate_c.png",
+    "assets/Certificate_cpp.png",
+    "assets/Certificate_python.png"
   ];
   @override
   Widget build(BuildContext context) {
