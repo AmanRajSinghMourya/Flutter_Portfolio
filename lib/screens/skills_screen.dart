@@ -56,16 +56,20 @@ class SkillsScreen extends StatelessWidget {
                   padding: EdgeInsets.all(padding),
                   child: ResponsiveLayout(
                     mobile: SkillsGrid(
-                      childAspectRatio: 2.0,
+                      childAspectRatio: 1.7,
                       crossAxisCount: 1,
                     ),
-                    tablet: SkillsGrid(
-                      childAspectRatio: 1.1,
+                    largeMobile: SkillsGrid(
+                      childAspectRatio: 1.3,
                       crossAxisCount: 3,
+                    ),
+                    tablet: SkillsGrid(
+                      childAspectRatio: 1.6,
+                      crossAxisCount: 2,
                     ),
                     desktop: SkillsGrid(
                       crossAxisCount: 4,
-                      childAspectRatio: 1.6,
+                      childAspectRatio: 1.3,
                     ),
                   ),
                 ),
@@ -96,10 +100,41 @@ class SkillsGrid extends StatelessWidget {
         crossAxisSpacing: padding,
       ),
       itemCount: 4,
-      itemBuilder: (context, index) => Card(
-        child: Container(
-          child: Text("skiils"),
-          color: Colors.red,
+      itemBuilder: (context, index) => Container(
+        decoration: BoxDecoration(
+          color: secondaryColor,
+          borderRadius: BorderRadius.circular(20),
+        ),
+        padding:
+            EdgeInsets.symmetric(horizontal: padding, vertical: padding / 2),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                CircleAvatar(
+                  radius: 30,
+                  backgroundImage: ExactAssetImage("assets/flutter.png"),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: padding / 2,
+            ),
+            Text(
+              "Flutter",
+              style: Theme.of(context).textTheme.titleLarge,
+              textAlign: TextAlign.center,
+            ),
+            SizedBox(
+              height: padding / 2,
+            ),
+            Text(
+              "I am skilled in creating basic apps using Dart and Flutter. Some of my works include Unit Convertor, Portfolio",
+            )
+          ],
         ),
       ),
     );

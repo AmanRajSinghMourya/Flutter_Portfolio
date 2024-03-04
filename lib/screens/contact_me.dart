@@ -54,6 +54,10 @@ class ContactMeScreen extends StatelessWidget {
               child: Container(
                 padding: EdgeInsets.all(padding),
                 child: ResponsiveLayout(
+                  largeMobile: ContactGrid(
+                    childAspectRatio: 1.1,
+                    crossAxisCount: 3,
+                  ),
                   mobile: ContactGrid(
                     childAspectRatio: 2.0,
                     crossAxisCount: 1,

@@ -25,6 +25,10 @@ class MyProjectSections extends StatelessWidget {
             childAspectRatio: 1.4,
             crossAxisCount: 1,
           ),
+          largeMobile: ProjectGrid(
+            childAspectRatio: 1.7,
+            crossAxisCount: 2,
+          ),
           tablet: ProjectGrid(
             childAspectRatio: 1.5,
             crossAxisCount: 2,

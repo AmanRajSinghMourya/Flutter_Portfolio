@@ -132,6 +132,11 @@ class AboutMe extends StatelessWidget {
                         crossAxisCount: 1,
                         certificate: certificate,
                       ),
+                      largeMobile: CertificateGrid(
+                        childAspectRatio: 1.1,
+                        crossAxisCount: 3,
+                        certificate: certificate,
+                      ),
                       tablet: CertificateGrid(
                         childAspectRatio: 1.1,
                         crossAxisCount: 3,
