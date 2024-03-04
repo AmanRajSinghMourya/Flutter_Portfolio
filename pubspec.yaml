@@ -83,6 +83,7 @@ flutter:
     - assets/HackerHorizon.png
     - assets/SIH2023.png
     - assets/udemy.png
+    - assets/portfolio_img.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

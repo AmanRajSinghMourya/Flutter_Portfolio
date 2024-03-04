@@ -6,6 +6,7 @@ import 'package:portfolio/screens/about_me.dart';
 import 'package:portfolio/screens/contact_me.dart';
 import 'package:portfolio/screens/home_screen.dart';
 import 'package:portfolio/screens/project_screens.dart';
+import 'package:portfolio/screens/skills_screen.dart';
 import 'package:portfolio/screens/timeline_screen.dart';
 
 class TopBar extends StatelessWidget {
@@ -58,8 +59,8 @@ class TopBar extends StatelessWidget {
                 NavigationButton(
                   title: "Skills",
                   onTap: () {
-                    // Navigator.of(context).push(
-                    //     MaterialPageRoute(builder: (context) => AboutMe()));
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => SkillsScreen()));
                   },
                 ),
                 NavigationButton(
