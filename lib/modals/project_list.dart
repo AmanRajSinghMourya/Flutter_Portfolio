@@ -25,6 +25,32 @@ class ContactDetails {
   });
 }
 
+class SkillsDetaisl {
+  final String iconName;
+  final String description;
+  final String title;
+
+  SkillsDetaisl({
+    required this.iconName,
+    required this.description,
+    required this.title,
+  });
+}
+
+List<SkillsDetaisl> skillsDetails = [
+  SkillsDetaisl(
+    iconName: "assets/flutter.png",
+    description:
+        "I am skilled in creating basic apps using Dart and Flutter. Some of my works include Unit Convertor, Portfolio",
+    title: "Flutter",
+  ),
+  SkillsDetaisl(
+    iconName: "assets/dart.png",
+    description: "Coding in dart",
+    title: "Dart",
+  ),
+];
+
 List<MyTimeLineTile> mytimelineEducation = [
   MyTimeLineTile(
     isFirst: true,

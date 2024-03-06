@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:portfolio/components/collegeTimeLine.dart';
 import 'package:portfolio/components/education_timeline.dart';
 import 'package:portfolio/constraints.dart';
@@ -41,20 +39,5 @@ class MyTimeLineScreen extends StatelessWidget {
               ),
             ),
           );
-    // Expanded(
-    //   child: Container(
-    //     color: Colors.amber,
-    //   ),
-    // ),
-    // Expanded(
-    //   child: Container(
-    //     color: Colors.red,
-    //   ),
-    // )
-    // SizedBox(
-    //     height: 400,
-    //     child: ListView(
-    //       children: [EducationTimeLine()],
-    //     ),
   }
 }

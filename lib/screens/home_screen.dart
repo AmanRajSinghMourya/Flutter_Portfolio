@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/components/myprojectsection.dart';
+import 'package:portfolio/components/resume_cv.dart';
 import 'package:portfolio/constraints.dart';
 import 'package:portfolio/responsive.dart';
 
@@ -22,13 +23,20 @@ class HomeScreen extends StatelessWidget {
         SizedBox(
           height: padding,
         ),
+        MyResume(),
+        Divider(),
         if (ResponsiveLayout.isDesktop(context))
-          Text("My TimeLine", style: Theme.of(context).textTheme.titleLarge),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: padding / 2),
+            child: Text("My TimeLine",
+                style: Theme.of(context).textTheme.titleLarge),
+          ),
+
         if (ResponsiveLayout.isDesktop(context)) MyTimeLineScreen(),
         SizedBox(
           height: padding,
         ),
-        Divider(),
+        // Divider(),
         MyProjectSections(),
       ],
     );

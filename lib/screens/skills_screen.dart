@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:portfolio/constraints.dart';
+import 'package:portfolio/modals/project_list.dart';
 import 'package:portfolio/responsive.dart';
 import 'package:portfolio/screens/top_bar.dart';
 
@@ -99,7 +100,7 @@ class SkillsGrid extends StatelessWidget {
         mainAxisSpacing: padding,
         crossAxisSpacing: padding,
       ),
-      itemCount: 4,
+      itemCount: skillsDetails.length,
       itemBuilder: (context, index) => Container(
         decoration: BoxDecoration(
           color: secondaryColor,
@@ -116,7 +117,9 @@ class SkillsGrid extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 30,
-                  backgroundImage: ExactAssetImage("assets/flutter.png"),
+                  backgroundImage: ExactAssetImage(
+                    skillsDetails[index].iconName,
+                  ),
                 ),
               ],
             ),
@@ -124,7 +127,7 @@ class SkillsGrid extends StatelessWidget {
               height: padding / 2,
             ),
             Text(
-              "Flutter",
+              skillsDetails[index].title,
               style: Theme.of(context).textTheme.titleLarge,
               textAlign: TextAlign.center,
             ),
@@ -132,7 +135,7 @@ class SkillsGrid extends StatelessWidget {
               height: padding / 2,
             ),
             Text(
-              "I am skilled in creating basic apps using Dart and Flutter. Some of my works include Unit Convertor, Portfolio",
+              skillsDetails[index].description,
             )
           ],
         ),
