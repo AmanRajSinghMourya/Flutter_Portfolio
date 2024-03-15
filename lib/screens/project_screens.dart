@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:url_launcher/url_launcher.dart' as launcher;
 import 'package:flutter/material.dart';
 import 'package:portfolio/constraints.dart';
 import 'package:portfolio/modals/project_list.dart';
@@ -99,6 +100,28 @@ class ProjectScreen extends StatelessWidget {
                                     .copyWith(
                                       color: Colors.white,
                                     ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: padding,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: padding),
+                              child: TextButton(
+                                onPressed: () {
+                                  launcher.launchUrl(
+                                    Uri.parse(project[index].githubUrl),
+                                    mode:
+                                        launcher.LaunchMode.externalApplication,
+                                  );
+                                },
+                                child: Text(
+                                  "GitHub",
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .titleMedium!
+                                      .copyWith(color: primaryColor),
+                                ),
                               ),
                             ),
                             if (ResponsiveLayout.isDesktop(context) == true)

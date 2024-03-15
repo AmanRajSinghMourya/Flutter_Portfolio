@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:portfolio/constraints.dart';
+import 'package:portfolio/modals/project_list.dart';
 import 'package:portfolio/responsive.dart';
 import 'package:portfolio/screens/top_bar.dart';
 
@@ -16,14 +17,7 @@ class AboutMe extends StatelessWidget {
     "Also started to dive in the concept of building Cross-Platform Responsive Application using Flutter.",
     "This Portfolio is also designed in the same.",
   ];
-  final List<String> certificate = [
-    "assets/HackerHorizon.png",
-    "assets/SIH2023.png",
-    "assets/udemy.png",
-    "assets/Certificate_c.png",
-    "assets/Certificate_cpp.png",
-    "assets/Certificate_python.png"
-  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

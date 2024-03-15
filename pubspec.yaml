@@ -72,17 +72,19 @@ flutter:
     - assets/github.png
     - assets/linkedin.png
     - assets/leetcod.png
-    - assets/codechef.jpg
-    - assets/flutter.png
-    - assets/firebase.png
-    - assets/dart.png
-    - assets/Certificate_c.png
-    - assets/Certificate_cpp.png
-    - assets/Certificate_python.png
-    - assets/HackerHorizon.png
-    - assets/SIH2023.png
-    - assets/udemy.png
+    - assets/codechef.jpg 
     - assets/portfolio_img.jpg
+    #certificats
+    - assets/certificates/Certificate_c.png
+    - assets/certificates/Certificate_cpp.png
+    - assets/certificates/Certificate_python.png
+    - assets/certificates/SIH2023.png
+    - assets/certificates/udemy.png
+    - assets/certificates/HackerHorizon.png
+    #tech icons
+    - assets/tech_icons/dart.png
+    - assets/tech_icons/firebase.png
+    - assets/tech_icons/flutter.png
     #unit_conveter_images
     - assets/unit_converter_assets/home_dark.jpg
     - assets/unit_converter_assets/home_light.jpg
