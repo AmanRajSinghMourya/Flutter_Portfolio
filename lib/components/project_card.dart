@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/components/text_stack_row.dart';
 import 'package:portfolio/constraints.dart';
 import 'package:portfolio/modals/project_list.dart';
 import 'package:portfolio/responsive.dart';
@@ -75,11 +74,18 @@ class ProjectCard extends StatelessWidget {
               ),
             ],
           ),
-          //tech stack used
-          // if (!ResponsiveLayout.isTablet(context))
-          // TechStackRow(
-          //   project: project,
-          // ),
+
+          if (!ResponsiveLayout.isTablet(context))
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                for (var i = 0; i < project.iconsUsed.length; i++)
+                  CircleAvatar(
+                    radius: 20,
+                    backgroundImage: ExactAssetImage(project.iconsUsed[i]),
+                  ),
+              ],
+            )
         ],
       ),
     );
