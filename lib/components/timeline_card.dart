@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/constraints.dart';
+import 'package:portfolio/responsive.dart';
 
 class TimeLineCard extends StatelessWidget {
   final String cardDescription;
@@ -11,7 +12,7 @@ class TimeLineCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 120,
+      height: ResponsiveLayout.isDesktop(context) ? 120 : 180,
       margin: EdgeInsets.all(10),
       padding: EdgeInsets.all(25),
       decoration: BoxDecoration(
@@ -30,7 +31,7 @@ class TimeLineCard extends StatelessWidget {
                 .copyWith(color: Colors.white),
             textAlign: TextAlign.start,
             overflow: TextOverflow.ellipsis,
-            maxLines: 3,
+            maxLines: 6,
           ),
         ],
       ),

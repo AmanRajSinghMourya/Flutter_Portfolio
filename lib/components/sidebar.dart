@@ -14,6 +14,7 @@ class SideBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      backgroundColor: darkColor,
       child: Column(
         children: [
           MyInfo(),

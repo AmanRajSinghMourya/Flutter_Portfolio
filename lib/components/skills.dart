@@ -26,21 +26,21 @@ class Skills extends StatelessWidget {
             Expanded(
               child: AnimatedProgressBar(
                 skillTitle: "Flutter",
-                percentage: 0.5,
+                percentage: 0.8,
               ),
             ),
             Spacer(),
             Expanded(
               child: AnimatedProgressBar(
-                skillTitle: "Cp",
-                percentage: 0.6,
+                skillTitle: "Cpp",
+                percentage: 0.8,
               ),
             ),
             Spacer(),
             Expanded(
               child: AnimatedProgressBar(
-                skillTitle: "Java",
-                percentage: 0.3,
+                skillTitle: "Dart",
+                percentage: 0.7,
               ),
             ),
             SizedBox(

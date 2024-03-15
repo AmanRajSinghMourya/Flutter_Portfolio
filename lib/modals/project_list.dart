@@ -91,7 +91,7 @@ List<MyTimeLineTile> mytimelineCollege = [
     isLast: false,
     timeLineCard: TimeLineCard(
       cardDescription:
-          "11th September, 2022 \nStarted my 1st day as a freshman in VIT,Chennai.",
+          "11th September, 2022 \nStarted my 1st day as a freshman in VIT,Chennai.\nEnrolled into bTech. in Computer Science",
     ),
   ),
   MyTimeLineTile(
@@ -153,8 +153,8 @@ List<Project> project = [
     githubUrl: "",
     projectTitle: "Meals App",
     description:
-        "Developed a mobile application using Flutter framework that allows users to discover and manage their favorite meals" +
-            "based on various categories such as fast food, Italian, and Indian cuisine.\n" +
+        "Developed a mobile application using Flutter framework that allows users to discover and manage their favorite meals " +
+            " based on various categories such as fast food, Italian, and Indian cuisine.\n" +
             "Users can explore a variety of meals within each category, " +
             "view detailed recipes including ingredients and instructions, and mark their favorite items for quick access.",
     projectImages: [
@@ -167,21 +167,11 @@ List<Project> project = [
     ],
   ),
   Project(
-    githubUrl: "",
-    projectTitle: "Calculator",
-    iconsUsed: [
-      "assets/tech_icons/dart.png",
-      "assets/tech_icons/flutter.png",
-    ],
-    description:
-        "My 1st Flutter project Calculator having light and dark theme.",
-    projectImages: [],
-  ),
-  Project(
     githubUrl: "https://github.com/AmanRajSinghMourya/Flutter_Portfolio",
     projectTitle: "Portfolio",
     description:
-        "Explore my dynamic Flutter portfolio, where I bring design to life and functionality to the forefront. From sleek UI/UX to seamless interactions, witness the art of mobile development in every project. Let's connect and explore the possibilities ",
+        "Explore my dynamic Flutter portfolio, where I bring design to life and functionality to the forefront." +
+            "\nFrom sleek UI/UX to seamless interactions, witness the art of mobile development in every project. Let's connect and explore the possibilities ",
     projectImages: [],
     iconsUsed: [
       "assets/tech_icons/dart.png",
