@@ -68,7 +68,6 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/back1.jpeg  
-    - assets/ss1.png
     - assets/gmail.png
     - assets/github.png
     - assets/linkedin.png
@@ -84,6 +83,21 @@ flutter:
     - assets/SIH2023.png
     - assets/udemy.png
     - assets/portfolio_img.jpg
+    #unit_conveter_images
+    - assets/unit_converter_assets/home_dark.jpg
+    - assets/unit_converter_assets/home_light.jpg
+    - assets/unit_converter_assets/example1.jpg
+    - assets/unit_converter_assets/example2.jpg
+    - assets/unit_converter_assets/example3.jpg
+    - assets/unit_converter_assets/example4.jpg
+    #meals app
+    - assets/meals_app_assets/details.jpg
+    - assets/meals_app_assets/favourite.jpg
+    - assets/meals_app_assets/homescreen.jpg
+    - assets/meals_app_assets/menu1.jpg
+    - assets/meals_app_assets/menu2.jpg
+    - assets/meals_app_assets/sidebar.jpg
+    
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -60,7 +60,7 @@ class ProjectScreen extends StatelessWidget {
                       // shrinkWrap: true,
                       padding: EdgeInsets.zero,
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        childAspectRatio: 16.0 / 5.0,
+                        childAspectRatio: 11.0 / 5.0,
                         crossAxisCount: 1,
                         crossAxisSpacing: padding,
                         mainAxisSpacing: padding,
@@ -112,7 +112,7 @@ class ProjectScreen extends StatelessWidget {
                                     margin: EdgeInsets.all(padding / 2),
                                     child: Image.asset(
                                       project[index].projectImages[index1],
-                                      fit: BoxFit.cover,
+                                      // fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
