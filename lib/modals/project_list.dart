@@ -172,7 +172,14 @@ List<Project> project = [
     description:
         "Explore my dynamic Flutter portfolio, where I bring design to life and functionality to the forefront." +
             "\nFrom sleek UI/UX to seamless interactions, witness the art of mobile development in every project. Let's connect and explore the possibilities ",
-    projectImages: [],
+    projectImages: [
+      "assets/portfolio_assets/aboout.jpg",
+      "assets/portfolio_assets/contact.jpg",
+      "assets/portfolio_assets/home.jpg",
+      "assets/portfolio_assets/projects.jpg",
+      "assets/portfolio_assets/side_bar.jpg",
+      "assets/portfolio_assets/timeline.jpg",
+    ],
     iconsUsed: [
       "assets/tech_icons/dart.png",
       "assets/tech_icons/flutter.png",

@@ -100,6 +100,13 @@ flutter:
     - assets/meals_app_assets/menu1.jpg
     - assets/meals_app_assets/menu2.jpg
     - assets/meals_app_assets/sidebar.jpg
+    #portfolio
+    - assets/portfolio_assets/aboout.jpg
+    - assets/portfolio_assets/contact.jpg
+    - assets/portfolio_assets/home.jpg
+    - assets/portfolio_assets/projects.jpg
+    - assets/portfolio_assets/side_bar.jpg
+    - assets/portfolio_assets/timeline.jpg
     
   #   - images/a_dot_ham.jpeg
 
