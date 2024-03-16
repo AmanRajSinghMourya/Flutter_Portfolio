@@ -62,16 +62,16 @@ class ProjectScreen extends StatelessWidget {
                         crossAxisCount: 1,
                       ),
                       largeMobile: ProjectTile(
-                        childAspectRatio: 1.7,
+                        childAspectRatio: 6.0 / 4.0,
                         crossAxisCount: 1,
                       ),
                       tablet: ProjectTile(
-                        childAspectRatio: 1.5,
+                        childAspectRatio: 7.0 / 5.0,
                         crossAxisCount: 1,
                       ),
                       desktop: ProjectTile(
                         crossAxisCount: 1,
-                        childAspectRatio: 1.2,
+                        childAspectRatio: 11.5 / 5.0,
                       ),
                     ),
                   ),
@@ -151,7 +151,7 @@ class ProjectTile extends StatelessWidget {
                     .copyWith(color: primaryColor),
               ),
             ),
-            if (ResponsiveLayout.isDesktop(context) == true)
+            if (ResponsiveLayout.isMobile(context) == false)
               Expanded(
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
