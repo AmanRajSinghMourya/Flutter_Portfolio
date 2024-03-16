@@ -82,8 +82,7 @@ To run the app, simply write
 8. Create a Pull Request!
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
+![](https://github.com/AmanRajSinghMourya/Flutter_Portfolio/blob/master/assets/readme_assets/readme_1.png?raw=true)
 
 ## Contact
 
