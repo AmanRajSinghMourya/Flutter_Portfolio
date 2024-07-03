@@ -36,7 +36,7 @@ class SkillsScreen extends StatelessWidget {
                       child: Container(),
                     ),
                   if (ResponsiveLayout.isDesktop(context) == true)
-                    Expanded(flex: 7, child: TopBar()),
+                    const Expanded(flex: 7, child: TopBar()),
                 ],
               ),
               const Divider(),
@@ -132,9 +132,6 @@ class SkillsGrid extends StatelessWidget {
             const SizedBox(
               height: padding / 2,
             ),
-            Text(
-              skillsDetails[index].description,
-            )
           ],
         ),
       ),

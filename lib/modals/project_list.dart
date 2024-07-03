@@ -27,34 +27,64 @@ class ContactDetails {
   });
 }
 
-class SkillsDetaisl {
+class SkillsDetails {
   final String iconName;
   final String description;
   final String title;
 
-  SkillsDetaisl({
+  SkillsDetails({
     required this.iconName,
-    required this.description,
+    this.description = "",
     required this.title,
   });
 }
 
-List<SkillsDetaisl> skillsDetails = [
-  SkillsDetaisl(
+List<SkillsDetails> skillsDetails = [
+  SkillsDetails(
     iconName: "assets/tech_icons/flutter.png",
-    description:
-        "I am skilled in creating basic apps using Dart and Flutter. Some of my works include Unit Convertor, Portfolio",
     title: "Flutter",
   ),
-  SkillsDetaisl(
+  SkillsDetails(
     iconName: "assets/tech_icons/firebase.png",
-    description: "Firebase databse to store data",
     title: "Firebase",
   ),
-  SkillsDetaisl(
+  SkillsDetails(
     iconName: "assets/tech_icons/dart.png",
-    description: "Coding in dart",
     title: "Dart",
+  ),
+  SkillsDetails(
+    iconName: "assets/tech_icons/github.png",
+    title: "Github",
+  ),
+  SkillsDetails(
+    iconName: "assets/tech_icons/git.png",
+    description: "",
+    title: "Git",
+  ),
+  SkillsDetails(
+    iconName: "assets/tech_icons/C++.png",
+    description: "",
+    title: "C++",
+  ),
+  SkillsDetails(
+    iconName: "assets/tech_icons/C.png",
+    description: "",
+    title: "C",
+  ),
+  SkillsDetails(
+    iconName: "assets/tech_icons/HTML.png",
+    description: "",
+    title: "HTML",
+  ),
+  SkillsDetails(
+    iconName: "assets/tech_icons/CSS.png",
+    description: "",
+    title: "CSS",
+  ),
+  SkillsDetails(
+    iconName: "assets/tech_icons/javascript.png",
+    description: "",
+    title: "Java Script",
   ),
 ];
 

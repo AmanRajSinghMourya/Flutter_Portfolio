@@ -86,6 +86,13 @@ flutter:
     - assets/tech_icons/dart.png
     - assets/tech_icons/firebase.png
     - assets/tech_icons/flutter.png
+    - assets/tech_icons/git.png
+    - assets/tech_icons/github.png
+    - assets/tech_icons/HTML.png
+    - assets/tech_icons/C.png
+    - assets/tech_icons/C++.png
+    - assets/tech_icons/CSS.png
+    - assets/tech_icons/javascript.png
     #unit_conveter_images
     - assets/unit_converter_assets/home_dark.jpg
     - assets/unit_converter_assets/home_light.jpg
