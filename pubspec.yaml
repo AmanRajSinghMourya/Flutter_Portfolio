@@ -81,6 +81,7 @@ flutter:
     - assets/certificates/SIH2023.png
     - assets/certificates/udemy.png
     - assets/certificates/HackerHorizon.png
+    - assets/certificates/Amazon_Hackon.png
     #tech icons
     - assets/tech_icons/dart.png
     - assets/tech_icons/firebase.png
