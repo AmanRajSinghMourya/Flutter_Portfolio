@@ -10,7 +10,7 @@ import 'package:portfolio/screens/skills_screen.dart';
 import 'package:portfolio/screens/timeline_screen.dart';
 
 class TopBar extends StatelessWidget {
-  TopBar({super.key});
+  const TopBar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,25 +21,11 @@ class TopBar extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                // Spacer(),
-                // if (ResponsiveLayout.isDesktop(context))
-                //   Padding(
-                //     padding: const EdgeInsets.all(8.0),
-                //     child: Text(
-                //       "Aman's Portfolio",
-                //       style: Theme.of(context).textTheme.titleLarge!.copyWith(),
-                //     ),
-                //   ),
-                // Expanded(
-                //   child: Container(),
-                //   flex: 2,
-                // ),
-                // Spacer(),
                 NavigationButton(
                   title: "Home",
                   onTap: () {
-                    Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => HomeScreen()));
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const HomeScreen()));
                   },
                 ),
                 NavigationButton(
@@ -53,24 +39,23 @@ class TopBar extends StatelessWidget {
                   title: "Projects",
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => ProjectScreen()));
+                        builder: (context) => const ProjectScreen()));
                   },
                 ),
                 NavigationButton(
                   title: "Skills",
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => SkillsScreen()));
+                        builder: (context) => const SkillsScreen()));
                   },
                 ),
                 NavigationButton(
                   title: "Contact",
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => ContactMeScreen()));
+                        builder: (context) => const ContactMeScreen()));
                   },
                 ),
-                // Spacer(),
               ],
             ),
           )
@@ -78,18 +63,17 @@ class TopBar extends StatelessWidget {
             padding: const EdgeInsets.only(bottom: padding / 2),
             child: Column(
               children: [
-                // FontAwesomeIcons.neos,
                 SideBarNavigation(
-                  icon: Icon(Icons.home),
+                  icon: const Icon(Icons.home),
                   title: "Home",
                   onTap: () {
-                    Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => HomeScreen()));
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const HomeScreen()));
                   },
                 ),
                 SideBarNavigation(
                   title: "About",
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.person,
                   ),
                   onTap: () {
@@ -99,32 +83,32 @@ class TopBar extends StatelessWidget {
                 ),
                 SideBarNavigation(
                   title: "Projects",
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.plus_one_rounded,
                   ),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => ProjectScreen()));
+                        builder: (context) => const ProjectScreen()));
                   },
                 ),
                 SideBarNavigation(
                   title: "Contact",
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.mail_outline_rounded,
                   ),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => ContactMeScreen()));
+                        builder: (context) => const ContactMeScreen()));
                   },
                 ),
                 SideBarNavigation(
                   title: "TimeLine",
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.stacked_line_chart_outlined,
                   ),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => MyTimeLineScreen()));
+                        builder: (context) => const MyTimeLineScreen()));
                   },
                 ),
               ],

@@ -14,7 +14,7 @@ class ContactMeScreen extends StatelessWidget {
       appBar: ResponsiveLayout.isDesktop(context)
           ? null
           : AppBar(
-              title: Text(
+              title: const Text(
                 "Contacts",
                 style: TextStyle(
                   color: Colors.white,
@@ -86,8 +86,8 @@ class ContactGrid extends StatelessWidget {
     this.childAspectRatio = 1.6,
     super.key,
   });
-  final crossAxisCount;
-  final childAspectRatio;
+  final int crossAxisCount;
+  final double childAspectRatio;
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
@@ -124,7 +124,7 @@ class ColumnIcons extends StatelessWidget {
           Expanded(
             child: Container(
               clipBehavior: Clip.hardEdge,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 color: Colors.transparent,
               ),

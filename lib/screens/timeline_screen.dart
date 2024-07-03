@@ -12,7 +12,7 @@ class MyTimeLineScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ResponsiveLayout.isDesktop(context)
-        ? Row(
+        ? const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               EducationTimeLine(),
@@ -21,11 +21,11 @@ class MyTimeLineScreen extends StatelessWidget {
           )
         : Scaffold(
             appBar: AppBar(
-              title: Text("TimeLine"),
+              title: const Text("TimeLine"),
             ),
             body: SafeArea(
               child: ListView(
-                children: [
+                children: const [
                   SizedBox(
                     height: padding,
                   ),

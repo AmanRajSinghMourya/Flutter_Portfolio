@@ -7,7 +7,7 @@ class TimeLine extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 600,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 50),

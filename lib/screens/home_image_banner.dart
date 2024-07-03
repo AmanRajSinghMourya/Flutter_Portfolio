@@ -45,7 +45,7 @@ class HomeImageBanner extends StatelessWidget {
                           : Theme.of(context).textTheme.headlineSmall!.copyWith(
                               color: Colors.white, fontWeight: FontWeight.bold),
                     ),
-                    Expanded(child: AnimatedTextWidget()),
+                    const Expanded(child: AnimatedTextWidget()),
                   ],
                 ),
               ],
