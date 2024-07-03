@@ -16,11 +16,11 @@ class _LoadingScreenState extends State<LoadingScreen> {
       body: Center(
         child: TweenAnimationBuilder(
           tween: Tween<double>(begin: 0.0, end: 1.0),
-          duration: Duration(seconds: 1),
+          duration: const Duration(seconds: 1),
           builder: (context, value, child) => Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Spacer(
+              const Spacer(
                 flex: 3,
               ),
               Expanded(
@@ -31,7 +31,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
                       "Aman Raj",
                       style: Theme.of(context).textTheme.titleSmall,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: padding / 2,
                     ),
                     LinearProgressIndicator(
@@ -39,19 +39,19 @@ class _LoadingScreenState extends State<LoadingScreen> {
                       color: primaryColor,
                       backgroundColor: darkColor,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: padding / 2,
                     ),
                     Text(
-                      (value * 100).toInt().toString() + "%",
-                      style: TextStyle(
+                      "${(value * 100).toInt()}%",
+                      style: const TextStyle(
                         fontWeight: FontWeight.w200,
                       ),
                     ),
                   ],
                 ),
               ),
-              Spacer(
+              const Spacer(
                 flex: 3,
               ),
             ],

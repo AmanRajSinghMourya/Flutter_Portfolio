@@ -17,7 +17,7 @@ class MainScreen extends StatelessWidget {
       appBar: ResponsiveLayout.isDesktop(context)
           ? null
           : AppBar(
-              title: Text(
+              title: const Text(
                 "Portfolio X Aman",
                 style: TextStyle(
                   color: Colors.white,
@@ -32,14 +32,14 @@ class MainScreen extends StatelessWidget {
                   onPressed: () {
                     Scaffold.of(context).openDrawer();
                   },
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.menu,
                   ),
                 ),
               ),
             ),
       //this side bar is triggered from the IconButton
-      drawer: SideBar(),
+      drawer: const SideBar(),
       body: Center(
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -51,23 +51,14 @@ class MainScreen extends StatelessWidget {
             //this is the side bar or my profiel section
 
             if (ResponsiveLayout.isDesktop(context) == true)
-              Expanded(
+              const Expanded(
                 flex: 2,
                 child: SideBar(),
               ),
-            SizedBox(
+            const SizedBox(
               width: padding,
             ),
-            // Expanded(
-            //   flex: 7,
-            //   child: SingleChildScrollView(
-            //     child: Column(
-            //       children: [
-            //         ...childrenOfRightPart,
-            //       ],
-            //     ),
-            //   ),
-            // ),
+
             Expanded(
               flex: 7,
               child: Container(
@@ -75,7 +66,7 @@ class MainScreen extends StatelessWidget {
                   children: [
                     ResponsiveLayout.isDesktop(context)
                         ? TopBar()
-                        : Row(children: []),
+                        : const Row(children: []),
                     Expanded(
                       child: SingleChildScrollView(
                         child: Column(
@@ -88,13 +79,6 @@ class MainScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              // SingleChildScrollView(
-              //   child: Column(
-              //     children: [
-              //       ...childrenOfRightPart,
-              //     ],
-              //   ),
-              // ),
             ),
           ],
         ),

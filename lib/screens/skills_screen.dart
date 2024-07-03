@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:portfolio/constraints.dart';
 import 'package:portfolio/modals/project_list.dart';
 import 'package:portfolio/responsive.dart';
@@ -15,7 +13,7 @@ class SkillsScreen extends StatelessWidget {
       appBar: ResponsiveLayout.isDesktop(context)
           ? null
           : AppBar(
-              title: Text(
+              title: const Text(
                 "Skiils",
                 style: TextStyle(
                   color: Colors.white,
@@ -41,9 +39,9 @@ class SkillsScreen extends StatelessWidget {
                     Expanded(flex: 7, child: TopBar()),
                 ],
               ),
-              Divider(),
+              const Divider(),
               Padding(
-                padding: EdgeInsets.all(padding),
+                padding: const EdgeInsets.all(padding),
                 child: Text(
                   "My skills include",
                   style: Theme.of(context)
@@ -54,8 +52,8 @@ class SkillsScreen extends StatelessWidget {
               ),
               Expanded(
                 child: Container(
-                  padding: EdgeInsets.all(padding),
-                  child: ResponsiveLayout(
+                  padding: const EdgeInsets.all(padding),
+                  child: const ResponsiveLayout(
                     mobile: SkillsGrid(
                       childAspectRatio: 1.7,
                       crossAxisCount: 1,
@@ -89,8 +87,8 @@ class SkillsGrid extends StatelessWidget {
     this.crossAxisCount = 4,
     this.childAspectRatio = 1.6,
   });
-  final crossAxisCount;
-  final childAspectRatio;
+  final int crossAxisCount;
+  final double childAspectRatio;
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
@@ -106,8 +104,8 @@ class SkillsGrid extends StatelessWidget {
           color: secondaryColor,
           borderRadius: BorderRadius.circular(20),
         ),
-        padding:
-            EdgeInsets.symmetric(horizontal: padding, vertical: padding / 2),
+        padding: const EdgeInsets.symmetric(
+            horizontal: padding, vertical: padding / 2),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -123,7 +121,7 @@ class SkillsGrid extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: padding / 2,
             ),
             Text(
@@ -131,7 +129,7 @@ class SkillsGrid extends StatelessWidget {
               style: Theme.of(context).textTheme.titleLarge,
               textAlign: TextAlign.center,
             ),
-            SizedBox(
+            const SizedBox(
               height: padding / 2,
             ),
             Text(

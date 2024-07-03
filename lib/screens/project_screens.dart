@@ -23,7 +23,7 @@ class ProjectScreen extends StatelessWidget {
       appBar: ResponsiveLayout.isDesktop(context)
           ? null
           : AppBar(
-              title: Text(
+              title: const Text(
                 "My Projects",
                 style: TextStyle(
                   color: Colors.white,
@@ -51,7 +51,7 @@ class ProjectScreen extends StatelessWidget {
             //TopBar applied on ProjectScreen
             // Divider(),
 
-            Expanded(
+            const Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -92,8 +92,8 @@ class ProjectTile extends StatelessWidget {
     this.childAspectRatio = 1.3,
   });
 
-  final crossAxisCount;
-  final childAspectRatio;
+  final int crossAxisCount;
+  final double childAspectRatio;
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
@@ -108,18 +108,17 @@ class ProjectTile extends StatelessWidget {
       scrollDirection: Axis.vertical,
       itemCount: project.length,
       itemBuilder: (context, index) => Container(
-        // color: Colors.white,
-        padding: EdgeInsets.all(padding),
+        padding: const EdgeInsets.all(padding),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              (index + 1).toString() + ". " + project[index].projectTitle,
+              "${index + 1}. ${project[index].projectTitle}",
               style: Theme.of(context).textTheme.titleLarge!.copyWith(
                     color: primaryColor,
                   ),
             ),
-            SizedBox(
+            const SizedBox(
               height: padding / 2,
             ),
             Padding(
@@ -133,7 +132,7 @@ class ProjectTile extends StatelessWidget {
                     ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: padding / 2,
             ),
             TextButton(
@@ -157,11 +156,10 @@ class ProjectTile extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   itemCount: project[index].projectImages.length,
                   itemBuilder: (context, index1) => Container(
-                    padding: EdgeInsets.all(padding / 2),
-                    margin: EdgeInsets.all(padding / 2),
+                    padding: const EdgeInsets.all(padding / 2),
+                    margin: const EdgeInsets.all(padding / 2),
                     child: Image.asset(
                       project[index].projectImages[index1],
-                      // fit: BoxFit.cover,
                     ),
                   ),
                 ),

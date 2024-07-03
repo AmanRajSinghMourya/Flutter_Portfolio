@@ -24,7 +24,7 @@ class AboutMe extends StatelessWidget {
       appBar: ResponsiveLayout.isDesktop(context)
           ? null
           : AppBar(
-              title: Text(
+              title: const Text(
                 "About",
                 style: TextStyle(
                   color: Colors.white,
@@ -59,7 +59,7 @@ class AboutMe extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   // mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: padding / 2,
                     ),
                     Padding(
@@ -81,7 +81,7 @@ class AboutMe extends StatelessWidget {
                                 ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: padding / 2,
                     ),
                     for (int i = 0; i < me.length; i++)
@@ -91,7 +91,7 @@ class AboutMe extends StatelessWidget {
                           left: padding,
                         ),
                         child: Text(
-                          (i + 1).toString() + ". " + me[i],
+                          "${i + 1}. ${me[i]}",
                           style: ResponsiveLayout.isDesktop(context)
                               ? Theme.of(context)
                                   .textTheme
@@ -106,7 +106,7 @@ class AboutMe extends StatelessWidget {
                                   fontWeight: FontWeight.bold),
                         ),
                       ),
-                    Divider(),
+                    const Divider(),
                     Padding(
                       padding: const EdgeInsets.all(padding),
                       child: Text(
@@ -160,15 +160,15 @@ class CertificateGrid extends StatelessWidget {
     this.crossAxisCount = 2,
     this.childAspectRatio = 16.0 / 9.0,
   });
-  final crossAxisCount;
-  final childAspectRatio;
+  final int crossAxisCount;
+  final double childAspectRatio;
   final List<String> certificate;
 
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
       shrinkWrap: true,
-      physics: ClampingScrollPhysics(),
+      physics: const ClampingScrollPhysics(),
       scrollDirection: Axis.vertical,
       itemCount: certificate.length,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -182,11 +182,9 @@ class CertificateGrid extends StatelessWidget {
           horizontal: padding / 2,
           vertical: padding / 4,
         ),
-        child: Container(
-          child: Image.asset(
-            certificate[index],
-            // fit: BoxFit.cover,
-          ),
+        child: Image.asset(
+          certificate[index],
+          // fit: BoxFit.cover,
         ),
       ),
     );

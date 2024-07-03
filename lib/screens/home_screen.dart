@@ -19,12 +19,12 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MainScreen(
       childrenOfRightPart: [
-        HomeImageBanner(),
-        SizedBox(
+        const HomeImageBanner(),
+        const SizedBox(
           height: padding,
         ),
-        MyResume(),
-        Divider(),
+        const MyResume(),
+        const Divider(),
         if (ResponsiveLayout.isDesktop(context))
           Padding(
             padding: const EdgeInsets.symmetric(vertical: padding / 2),
@@ -32,12 +32,12 @@ class HomeScreen extends StatelessWidget {
                 style: Theme.of(context).textTheme.titleLarge),
           ),
 
-        if (ResponsiveLayout.isDesktop(context)) MyTimeLineScreen(),
-        SizedBox(
+        if (ResponsiveLayout.isDesktop(context)) const MyTimeLineScreen(),
+        const SizedBox(
           height: padding,
         ),
         // Divider(),
-        MyProjectSections(),
+        const MyProjectSections(),
       ],
     );
   }

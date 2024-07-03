@@ -58,7 +58,7 @@ List<SkillsDetaisl> skillsDetails = [
   ),
 ];
 
-List<MyTimeLineTile> mytimelineEducation = [
+List<MyTimeLineTile> mytimelineEducation = const [
   MyTimeLineTile(
     isFirst: true,
     isLast: false,
@@ -85,7 +85,7 @@ List<MyTimeLineTile> mytimelineEducation = [
   ),
 ];
 
-List<MyTimeLineTile> mytimelineCollege = [
+List<MyTimeLineTile> mytimelineCollege = const [
   MyTimeLineTile(
     isFirst: true,
     isLast: false,
@@ -141,7 +141,8 @@ final List<String> certificate = [
   "assets/certificates/Certificate_python.png",
   "assets/certificates/SIH2023.png",
   "assets/certificates/udemy.png",
-  "assets/certificates/HackerHorizon.png"
+  "assets/certificates/HackerHorizon.png",
+  "assets/certificates/Amazon_Hackon.png",
 ];
 
 List<Project> project = [
@@ -153,10 +154,7 @@ List<Project> project = [
     githubUrl: "",
     projectTitle: "Meals App",
     description:
-        "Developed a mobile application using Flutter framework that allows users to discover and manage their favorite meals " +
-            " based on various categories such as fast food, Italian, and Indian cuisine.\n" +
-            "Users can explore a variety of meals within each category, " +
-            "view detailed recipes including ingredients and instructions, and mark their favorite items for quick access.",
+        "Developed a mobile application using Flutter framework that allows users to discover and manage their favorite meals  based on various categories such as fast food, Italian, and Indian cuisine.\nUsers can explore a variety of meals within each category, view detailed recipes including ingredients and instructions, and mark their favorite items for quick access.",
     projectImages: [
       "assets/meals_app_assets/homescreen.jpg",
       "assets/meals_app_assets/sidebar.jpg",
