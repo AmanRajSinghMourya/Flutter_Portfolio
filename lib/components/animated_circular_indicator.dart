@@ -17,18 +17,18 @@ class AnimatedProgressBar extends StatelessWidget {
           aspectRatio: 1,
           child: TweenAnimationBuilder(
             tween: Tween(begin: 0.0, end: percentage),
-            duration: Duration(seconds: 1),
+            duration: const Duration(seconds: 1),
             builder: (context, value, child) => Stack(
               fit: StackFit.expand,
               children: [
                 CircularProgressIndicator(
                   value: value,
                   color: primaryColor,
-                  backgroundColor: darkColor,
+                  backgroundColor: secondaryColor,
                 ),
                 Center(
                   child: Text(
-                    (value * 100).toInt().toString() + "%",
+                    "${(value * 100).toInt()}%",
                     style: Theme.of(context).textTheme.titleSmall,
                   ),
                 ),
