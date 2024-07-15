@@ -74,6 +74,7 @@ flutter:
     - assets/leetcod.png
     - assets/codechef.jpg 
     - assets/portfolio_img.jpg
+    - assets/loading_image.png
     #certificats
     - assets/certificates/Certificate_c.png
     - assets/certificates/Certificate_cpp.png

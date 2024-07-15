@@ -17,33 +17,33 @@ class LinearProgressBar extends StatelessWidget {
       ),
       child: TweenAnimationBuilder(
         tween: Tween<double>(begin: 0.0, end: percentage),
-        duration: Duration(seconds: 1),
+        duration: const Duration(seconds: 1),
         builder: (context, value, child) => Column(
           children: [
             Row(
               children: [
                 Text(
                   language,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.white,
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
                 Text(
-                  (value * 100).toInt().toString() + "%",
-                  style: TextStyle(
+                  "${(value * 100).toInt()}%",
+                  style: const TextStyle(
                     fontWeight: FontWeight.w200,
                   ),
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: padding / 2,
             ),
             LinearProgressIndicator(
               value: value,
               color: primaryColor,
-              backgroundColor: darkColor,
+              backgroundColor: secondaryColor,
             ),
           ],
         ),
