@@ -20,7 +20,7 @@ class CollegeTimeLine extends StatelessWidget {
                   .copyWith(color: primaryColor)),
           Container(
             color: backColor,
-            margin: EdgeInsets.all(5),
+            margin: const EdgeInsets.all(5),
             child: TimeLine(
               mytimelinetile: [...mytimelineCollege],
             ),

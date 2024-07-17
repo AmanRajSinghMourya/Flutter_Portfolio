@@ -44,7 +44,7 @@ class ProjectScreen extends StatelessWidget {
                     child: Container(),
                   ),
                 if (ResponsiveLayout.isDesktop(context) == true)
-                  Expanded(flex: 7, child: TopBar()),
+                  const Expanded(flex: 7, child: TopBar()),
               ],
             ),
 

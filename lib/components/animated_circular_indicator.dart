@@ -36,7 +36,7 @@ class AnimatedProgressBar extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: padding / 2,
         ),
         Text(

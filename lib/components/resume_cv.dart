@@ -8,7 +8,7 @@ class MyResume extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return !ResponsiveLayout.isMobile(context)
-        ? Padding(
+        ? const Padding(
             padding: const EdgeInsets.all(padding),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -22,7 +22,7 @@ class MyResume extends StatelessWidget {
               ],
             ),
           )
-        : Padding(
+        : const Padding(
             padding: const EdgeInsets.all(padding),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -68,7 +68,7 @@ class ButtonCV extends StatelessWidget {
         onPressed: () {},
         child: Text(
           title,
-          style: TextStyle(
+          style: const TextStyle(
             letterSpacing: 1.5,
             color: Colors.white,
             fontWeight: FontWeight.w700,

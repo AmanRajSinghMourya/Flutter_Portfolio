@@ -17,13 +17,14 @@ class SideBar extends StatelessWidget {
       backgroundColor: darkColor,
       child: Column(
         children: [
-          MyInfo(),
+          const MyInfo(),
           Expanded(
             child: SingleChildScrollView(
-              padding: EdgeInsets.all(padding),
+              padding: const EdgeInsets.all(padding),
               child: Column(
                 children: [
-                  if (ResponsiveLayout.isDesktop(context) == false) TopBar(),
+                  if (ResponsiveLayout.isDesktop(context) == false)
+                    const TopBar(),
                   // ResponsiveLayout.isDesktop(context) ? TopBar() :
                   // Divider(),
                   // DetailRow(
@@ -38,11 +39,11 @@ class SideBar extends StatelessWidget {
                   //   text: "Age:",
                   //   title: "20",
                   // ),
-                  Skills(),
-                  SizedBox(
+                  const Skills(),
+                  const SizedBox(
                     height: padding / 2,
                   ),
-                  Coding(),
+                  const Coding(),
                 ],
               ),
             ),
@@ -71,7 +72,7 @@ class DetailRow extends StatelessWidget {
             text,
             style: Theme.of(context).textTheme.titleSmall,
           ),
-          Spacer(),
+          const Spacer(),
           Text(title),
         ],
       ),

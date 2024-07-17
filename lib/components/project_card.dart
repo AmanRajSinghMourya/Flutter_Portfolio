@@ -19,7 +19,7 @@ class ProjectCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         color: secondaryColor,
       ),
-      padding: EdgeInsets.all(padding),
+      padding: const EdgeInsets.all(padding),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -35,7 +35,7 @@ class ProjectCard extends StatelessWidget {
             maxLines: ResponsiveLayout.isMobile(context) ? 3 : 3,
             project.description,
             overflow: TextOverflow.ellipsis,
-            style: TextStyle(
+            style: const TextStyle(
               height: 1.5,
             ),
           ),
@@ -48,11 +48,11 @@ class ProjectCard extends StatelessWidget {
                 onPressed: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (context) => ProjectScreen(),
+                      builder: (context) => const ProjectScreen(),
                     ),
                   );
                 },
-                child: Text(
+                child: const Text(
                   "Read More>>",
                   style: TextStyle(color: primaryColor),
                 ),

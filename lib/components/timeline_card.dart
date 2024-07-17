@@ -13,8 +13,8 @@ class TimeLineCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: ResponsiveLayout.isDesktop(context) ? 120 : 180,
-      margin: EdgeInsets.all(10),
-      padding: EdgeInsets.all(25),
+      margin: const EdgeInsets.all(10),
+      padding: const EdgeInsets.all(25),
       decoration: BoxDecoration(
         color: secondaryColor,
         borderRadius: BorderRadius.circular(8),

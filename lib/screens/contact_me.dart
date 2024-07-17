@@ -36,12 +36,12 @@ class ContactMeScreen extends StatelessWidget {
                     child: Container(),
                   ),
                 if (ResponsiveLayout.isDesktop(context) == true)
-                  Expanded(flex: 7, child: TopBar()),
+                  const Expanded(flex: 7, child: TopBar()),
               ],
             ),
-            Divider(),
+            const Divider(),
             Padding(
-              padding: EdgeInsets.all(padding),
+              padding: const EdgeInsets.all(padding),
               child: Text(
                 "You can hit me up here",
                 style: Theme.of(context)
@@ -52,8 +52,8 @@ class ContactMeScreen extends StatelessWidget {
             ),
             Expanded(
               child: Container(
-                padding: EdgeInsets.all(padding),
-                child: ResponsiveLayout(
+                padding: const EdgeInsets.all(padding),
+                child: const ResponsiveLayout(
                   largeMobile: ContactGrid(
                     childAspectRatio: 1.1,
                     crossAxisCount: 3,

@@ -14,31 +14,31 @@ class MyInfo extends StatelessWidget {
         color: darkColor,
         child: Column(
           children: [
-            Spacer(
+            const Spacer(
               flex: 2,
             ),
-            CircleAvatar(
+            const CircleAvatar(
               radius: 50,
               backgroundImage: AssetImage(
                 "assets/portfolio_img.jpg",
               ),
             ),
-            Spacer(),
+            const Spacer(),
             Text(
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               "Aman Raj Singh Mourya",
               style: Theme.of(context).textTheme.titleSmall,
             ),
-            Spacer(),
-            Text(
+            const Spacer(),
+            const Text(
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               "Flutter Developer & Competitive Programmer",
               textAlign: TextAlign.center,
               style: TextStyle(fontWeight: FontWeight.w300, height: 1.5),
             ),
-            Spacer(
+            const Spacer(
               flex: 2,
             ),
           ],

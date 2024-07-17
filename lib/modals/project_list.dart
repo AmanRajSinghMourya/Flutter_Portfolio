@@ -198,8 +198,8 @@ List<Project> project = [
     githubUrl: "https://github.com/AmanRajSinghMourya/Flutter_Portfolio",
     projectTitle: "Portfolio",
     description:
-        "Explore my dynamic Flutter portfolio, where I bring design to life and functionality to the forefront." +
-            "\nFrom sleek UI/UX to seamless interactions, witness the art of mobile development in every project. Let's connect and explore the possibilities ",
+        "Explore my dynamic Flutter portfolio, where I bring design to life and functionality to the forefront."
+        "\nFrom sleek UI/UX to seamless interactions, witness the art of mobile development in every project. Let's connect and explore the possibilities ",
     projectImages: [
       "assets/portfolio_assets/aboout.jpg",
       "assets/portfolio_assets/contact.jpg",

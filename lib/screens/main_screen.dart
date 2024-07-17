@@ -25,7 +25,6 @@ class MainScreen extends StatelessWidget {
                 ),
               ),
               centerTitle: true,
-              actions: [],
               backgroundColor: backColor,
               leading: Builder(
                 builder: (context) => IconButton(
@@ -61,23 +60,21 @@ class MainScreen extends StatelessWidget {
 
             Expanded(
               flex: 7,
-              child: Container(
-                child: Column(
-                  children: [
-                    ResponsiveLayout.isDesktop(context)
-                        ? TopBar()
-                        : const Row(children: []),
-                    Expanded(
-                      child: SingleChildScrollView(
-                        child: Column(
-                          children: [
-                            ...childrenOfRightPart,
-                          ],
-                        ),
+              child: Column(
+                children: [
+                  ResponsiveLayout.isDesktop(context)
+                      ? const TopBar()
+                      : const Row(children: []),
+                  Expanded(
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: [
+                          ...childrenOfRightPart,
+                        ],
                       ),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ],
