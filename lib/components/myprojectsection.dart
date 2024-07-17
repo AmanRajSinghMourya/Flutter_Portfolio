@@ -20,7 +20,7 @@ class MyProjectSections extends StatelessWidget {
             style: Theme.of(context).textTheme.titleLarge,
           ),
         ),
-        ResponsiveLayout(
+        const ResponsiveLayout(
           mobile: ProjectGrid(
             childAspectRatio: 1.4,
             crossAxisCount: 1,
@@ -49,13 +49,13 @@ class ProjectGrid extends StatelessWidget {
     this.crossAxisCount = 3,
     this.childAspectRatio = 1.3,
   });
-  final crossAxisCount;
-  final childAspectRatio;
+  final int crossAxisCount;
+  final double childAspectRatio;
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
       shrinkWrap: true,
-      physics: ClampingScrollPhysics(),
+      physics: const ClampingScrollPhysics(),
       scrollDirection: Axis.vertical,
       itemCount: project.length,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(

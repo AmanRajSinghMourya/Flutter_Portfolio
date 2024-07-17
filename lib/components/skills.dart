@@ -11,7 +11,7 @@ class Skills extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Divider(),
+        const Divider(),
         Padding(
           padding: const EdgeInsets.symmetric(vertical: padding),
           child: Text(
@@ -20,7 +20,7 @@ class Skills extends StatelessWidget {
           ),
         ),
         //to animate this
-        Row(
+        const Row(
           // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Expanded(

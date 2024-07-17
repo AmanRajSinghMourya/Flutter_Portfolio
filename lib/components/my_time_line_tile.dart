@@ -20,10 +20,10 @@ class MyTimeLineTile extends StatelessWidget {
       child: TimelineTile(
         isFirst: isFirst,
         isLast: isLast,
-        beforeLineStyle: LineStyle(
+        beforeLineStyle: const LineStyle(
           color: Colors.white,
         ),
-        indicatorStyle: IndicatorStyle(
+        indicatorStyle: const IndicatorStyle(
           color: primaryColor,
           width: 20,
         ),
